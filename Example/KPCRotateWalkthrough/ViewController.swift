@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let dh: CGFloat = self.view.frame.height
         let dw: CGFloat = self.view.frame.width
         
-        let rotationFrame = CGRectMake(0, dh * 0.2, dw, dh * 0.5)
+        let rotationFrame = CGRectMake(0, dh * 0.1, dw, dh * 0.7)
         //rotationView factor
         let firstImage = UIImageView(frame: rotationFrame)
         firstImage.contentMode = .ScaleAspectFit
@@ -37,17 +37,23 @@ class ViewController: UIViewController {
         rotationView.append(secondImage)
         rotationView.append(thirdImage)
         
-        let fixFrame = CGRectMake(0, dh * 0.7, dw, dh * 0.3)
+        let fixFrame = CGRectMake(50, dh * 0.8, dw - 100, dh * 0.2)
         //fixView factor
         let firstText = UILabel(frame: fixFrame)
-        firstText.text = "The text of first view. This text is not rotatable"
+        firstText.text = "The text of first view. \nThis text is not rotatable"
         firstText.textColor = UIColor.whiteColor()
+        firstText.numberOfLines = 0
+        firstText.textAlignment = .Center
         let secondText = UILabel(frame: fixFrame)
-        secondText.text = "The text of second view. Smooth rotation will contribute to user's high grade UX"
+        secondText.text = "The text of second view. \nSmooth rotation will contribute to user's high grade UX"
         secondText.textColor = UIColor.whiteColor()
+        secondText.numberOfLines = 0
+        secondText.textAlignment = .Center
         let thirdText = UILabel(frame: fixFrame)
-        thirdText.text = "The text of third view. If you like, please star me."
+        thirdText.text = "The text of third view. \nIf you like, please star me. \nThis Library was developed for Channel on AppStore"
         thirdText.textColor = UIColor.whiteColor()
+        thirdText.numberOfLines = 0
+        thirdText.textAlignment = .Center
         fixView.append(firstText)
         fixView.append(secondText)
         fixView.append(thirdText)

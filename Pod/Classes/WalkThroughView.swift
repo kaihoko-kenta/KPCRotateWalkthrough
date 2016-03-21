@@ -1,7 +1,7 @@
 
 import UIKit
 
-class WalkThroughView: UIView, UIScrollViewDelegate{
+public class WalkThroughView: UIView, UIScrollViewDelegate{
     
     var pageControl: UIPageControl!
     var scrollView: UIScrollView!
@@ -9,7 +9,7 @@ class WalkThroughView: UIView, UIScrollViewDelegate{
     var fixView: [UIView] = []
     var rotationView: [UIView] = []
     
-    init(frame: CGRect,fixView: [UIView],rotationView: [UIView]) {
+    public init(frame: CGRect,fixView: [UIView],rotationView: [UIView]) {
         //initializer
         super.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().applicationFrame.width, UIScreen.mainScreen().applicationFrame.height))
         self.fixView = fixView
@@ -38,6 +38,11 @@ class WalkThroughView: UIView, UIScrollViewDelegate{
             pageView.append(v)
         }
         
+        for (var i = 0; i < pageView.count; i++){
+            pageView[i].frame = CGRectMake(CGFloat(i) * width, 0, width, height)
+            scrollView.addSubview(pageView[i])
+        }
+        
         //UIPageControll
         pageControl = UIPageControl(frame: CGRectMake(0, 0, width, 50))
         pageControl.numberOfPages = pageSize
@@ -47,15 +52,15 @@ class WalkThroughView: UIView, UIScrollViewDelegate{
         
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    public func scrollViewDidScroll(scrollView: UIScrollView) {
         
         
         let page = pageControl.currentPage
-        //var offset = (scrollView.contentOffset.x - CGFloat(page) * self.view.frame.width) / self.view.frame.width
+
         let offset = ((scrollView.contentOffset.x + self.bounds.size.width) - (self.bounds.size.width * CGFloat(page))) / self.bounds.size.width
         print(scrollView.contentOffset.x)
         
@@ -69,13 +74,13 @@ class WalkThroughView: UIView, UIScrollViewDelegate{
 
         
         for (var i = 0; i < fixView.count; i++) {
-            self.rotationView[i].layer.transform = CATransform3DRotate(tr, CGFloat(M_PI) * (scrollView.contentOffset.x / (self.frame.width * 2)) - CGFloat(i) / 2, 0, 1, 1)
+            self.rotationView[i].layer.transform = CATransform3DRotate(tr, CGFloat(M_PI) * (scrollView.contentOffset.x / (self.frame.width * 2) - CGFloat(i) / 2), 0, 1, 1)
         }
         
     }
     
     
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         
         // add Page
         if fmod(scrollView.contentOffset.x, scrollView.frame.maxX) == 0 {
