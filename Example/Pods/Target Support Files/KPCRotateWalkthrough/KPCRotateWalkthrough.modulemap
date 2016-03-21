@@ -1,0 +1,6 @@
+framework module KPCRotateWalkthrough {
+  umbrella header "KPCRotateWalkthrough-umbrella.h"
+
+  export *
+  module * { export * }
+}
