@@ -1,5 +1,6 @@
 # KPCRotateWalkthrough
 
+![language](https://img.shields.io/badge/Language-%20Swift%20-orange.svg)
 [![CI Status](http://img.shields.io/travis/Kaihoko Kenta/KPCRotateWalkthrough.svg?style=flat)](https://travis-ci.org/Kaihoko Kenta/KPCRotateWalkthrough)
 [![Version](https://img.shields.io/cocoapods/v/KPCRotateWalkthrough.svg?style=flat)](http://cocoapods.org/pods/KPCRotateWalkthrough)
 [![License](https://img.shields.io/cocoapods/l/KPCRotateWalkthrough.svg?style=flat)](http://cocoapods.org/pods/KPCRotateWalkthrough)
