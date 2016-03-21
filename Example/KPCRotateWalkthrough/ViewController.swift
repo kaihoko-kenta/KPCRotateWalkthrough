@@ -52,7 +52,6 @@ class ViewController: UIViewController {
         fixView.append(secondText)
         fixView.append(thirdText)
         
-        
         //Call WalkThroughView
         let wtv = WalkThroughView(frame: self.view.frame, fixView: fixView, rotationView: rotationView)
         self.view.addSubview(wtv)

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '91FAE3F10BC26CA32DCCDDF4'
+               BlueprintIdentifier = 'A2F126422E066828927C06DA'
                BlueprintName = 'KPCRotateWalkthrough'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'KPCRotateWalkthrough.framework'>

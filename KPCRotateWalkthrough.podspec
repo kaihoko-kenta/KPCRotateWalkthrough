@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                            This can make your walkthrough more Wonderful!!
                        DESC
 
-  s.homepage         = "https://github.com/kenta-kaihoko/KPCRotateWalkthrough"
+  s.homepage         = "https://github.com/kaihoko-kenta/KPCRotateWalkthrough"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Kaihoko Kenta" => "kenta-kaihoko@chotchy.com" }
-  s.source           = { :git => "https://github.com/kenta-kaihoko/KPCRotateWalkthrough.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/kaihoko-kenta/KPCRotateWalkthrough.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/umipocoken'
 
   s.platform     = :ios, '8.0'
