@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/cocoapods/l/KPCRotateWalkthrough.svg?style=flat)](http://cocoapods.org/pods/KPCRotateWalkthrough)
 [![Platform](https://img.shields.io/cocoapods/p/KPCRotateWalkthrough.svg?style=flat)](http://cocoapods.org/pods/KPCRotateWalkthrough)
 
-<img src="./walkthrough.gif" alt="gifDemo" width="350" height="444">
+<img src="./walkthrough.gif" alt="gifDemo" width="350">
 
 ## Usage
 
@@ -98,9 +98,10 @@ self.view.addSubview(wtv)
 
 ## Author
 
-Chotchy,inc CEO
-Kaihoko Kenta
-Twitter(http://twitter.com/umipocoken)
+Chotchy,inc CEO(http://chotchy.net)<br>
+Kaihoko Kenta<br>
+Twitter(http://twitter.com/umipocoken)<br>
+
 
 ## License
 
