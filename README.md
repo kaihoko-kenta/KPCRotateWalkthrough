@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/cocoapods/l/KPCRotateWalkthrough.svg?style=flat)](http://cocoapods.org/pods/KPCRotateWalkthrough)
 [![Platform](https://img.shields.io/cocoapods/p/KPCRotateWalkthrough.svg?style=flat)](http://cocoapods.org/pods/KPCRotateWalkthrough)
 
+<img src="./walkthrough.gif" alt="gifDemo" width="350" height="444">
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
